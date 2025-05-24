@@ -6,11 +6,12 @@ filterMenu.addEventListener('change' , filteredHouses);
 
 
 function filteredHouses(event){
-
-    const houseSelect = event.target.value;
+                                    /*this is a ternary operator that when the page initially loads, if the user didn't 
+                                     choose any of the dropdown menu filter, it simply shows him all the 16 houses */
+    const houseSelect = event?.target?.value ? event.target.value : "all";
     console.log(houseSelect);
 
-
+//here we fetch the data
     fetch("https://hp-api.onrender.com/api/characters").then((response) => {
 
         if(!response.ok){
