@@ -1,0 +1,136 @@
+@font-face {
+
+    font-family: 'harryP';
+    src: url('../fonts/HarryPotter-ov4z.ttf') format('truetype');
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'harryP' , sans-serif;
+
+}
+
+body {
+
+    background-color: #333446;
+
+}
+
+header {
+
+    background-color: #1B1A17;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+h1 {
+
+    color: #F2F2F2;
+
+}
+
+.filteringSection {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.filterMenu {
+
+    padding: 8px 20px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 19px;
+
+
+}
+
+.filterMenu:focus , 
+.filterMenu:hover {
+
+    outline: none;
+    border: 1px solid #FFF7D1;
+
+}
+
+.filterMenu option {
+
+    background: #ffffff;
+
+}
+
+#cardContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 21px;
+
+}
+
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #727D73;
+    transition: 0.3s;
+    border-radius: 23px 23px 20px 20px;
+    height: 346px;
+
+}
+
+.card:hover {
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+img {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+#card-content {
+
+   
+    text-align: center;
+    padding: 10px;
+
+}
+
+#name-house {
+
+    margin-bottom: -2px;
+
+}
+
+
+.line {
+
+    width: 80%;
+    height: 2px;
+    background-color: #eeeeee;
+    margin: 21px auto 12px auto;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
